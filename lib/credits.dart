@@ -78,7 +78,12 @@ class credits extends StatelessWidget {
                  new Text('Shashank Maheshwar',style: new TextStyle(fontSize: 15.0,color: Colors.grey),),
                  new Padding(padding: EdgeInsets.only(top:20.0)),
                  new Text('Vinith P Nayak',style: new TextStyle(fontSize: 15.0,color: Colors.grey),),
+                 new Padding(padding: EdgeInsets.only(top:20.0)),
+                 new Text('Rakshak Shet',style: new TextStyle(fontSize: 15.0,color: Colors.grey),),
+                 new Padding(padding: EdgeInsets.only(top:20.0)),
+                 new Text('Sharana',style: new TextStyle(fontSize: 15.0,color: Colors.grey),),
                ],
+
              )
 
            ],
