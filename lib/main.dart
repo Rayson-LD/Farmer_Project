@@ -28,6 +28,7 @@ class _splashscreenState extends State<splashscreen> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+    debugShowCheckedModeBanner: false,
       title: 'Grow It',
       debugShowCheckedModeBanner: false,
       home: new Scaffold(
