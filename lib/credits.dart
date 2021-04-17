@@ -4,6 +4,7 @@ class credits extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+    debugShowCheckedModeBanner: false,
       home: new Scaffold(
         appBar: new AppBar(
           centerTitle: true,
