@@ -14,6 +14,7 @@ import 'Banana.dart';
 import 'Chickoo.dart';
 import 'SugarCane.dart';
 import 'credits.dart';
+import 'expansion.dart';
 
 void main() {
   runApp(splashscreen());
@@ -28,9 +29,9 @@ class _splashscreenState extends State<splashscreen> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-    debugShowCheckedModeBanner: false,
-      title: 'Grow It',
       debugShowCheckedModeBanner: false,
+      title: 'Grow It',
+
       home: new Scaffold(
         body: new Container(
           alignment: Alignment.center,
@@ -264,13 +265,14 @@ class _MainPageState extends State<MainPage>
                             fontWeight: FontWeight.bold,
                             fontSize: 25.0),
                       ),
-                      trailing: new Text(
+                      trailing: new FlatButton(onPressed:(){Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new expansion()));} ,child :new Text(
                         'FAQ',
                         style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.bold,
                             fontSize: 25.0),
                       ),
+                    ),
                     ),
                     new ListTile(),
                     CarouselSlider(
@@ -297,7 +299,7 @@ class _MainPageState extends State<MainPage>
                                 borderRadius: BorderRadius.circular(12.0),
                                 image: DecorationImage(
                                   image:
-                                      AssetImage('assets/images/farmer2.jpg'),
+                                  AssetImage('assets/images/farmer2.jpg'),
                                   fit: BoxFit.cover,
                                 )),
                           ),
@@ -306,7 +308,7 @@ class _MainPageState extends State<MainPage>
                                 borderRadius: BorderRadius.circular(12.0),
                                 image: DecorationImage(
                                   image:
-                                      AssetImage('assets/images/farmer3.jpg'),
+                                  AssetImage('assets/images/farmer3.jpg'),
                                   fit: BoxFit.cover,
                                 )),
                           )
@@ -440,60 +442,60 @@ class _MainPageState extends State<MainPage>
               ),
               new Container(
                   child: new ListView(
-                children: <Widget>[
-                  new ListTile(),
-                  new ListTile(
-                    title: new Text(
-                      'About SMVITM',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25.0,
+                    children: <Widget>[
+                      new ListTile(),
+                      new ListTile(
+                        title: new Text(
+                          'About SMVITM',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25.0,
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                  new ListTile(
-                    title: new Image.asset(
-                      'assets/images/smvitm.png',
-                      height: 150.0,
-                      width: 150.0,
-                    ),
-                  ),
-                  new ListTile(
-                    title: new Text(
-                      'Shri Madhwa Vadiraja Institute of Technology & Management (SMVITM),'
-                      ' situated at Bantakal in Udupi has carved a niche for itself in imparting quality engineering education in the coastal Karnataka region.'
-                      ' Shri Swamiji started the institute with the sublime objective of providing quality higher education to the needy student community at affordable costs. '
-                      'The motto Engineering your Career and Character with Care well reflects the objectives and philosophy of the institute.'
-                      ' Despite, being the youngest institute in the region, SMVITM has made remarkable strides in its journey towards excellence over the past five years and has emerged as the most promising engineering institute with its well-qualified and motivated faculty, '
-                      'state-of-the-art infrastructure and distinguished learning-centric facilities.',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 15.0,
+                      new ListTile(
+                        title: new Image.asset(
+                          'assets/images/smvitm.png',
+                          height: 150.0,
+                          width: 150.0,
+                        ),
                       ),
-                    ),
-                  ),
-                  new ListTile(),
-                  new ListTile(
-                    title: new Container(
-                      child: new FlatButton(
-                        child: Text(
-                          "Click Here for More Info",
+                      new ListTile(
+                        title: new Text(
+                          'Shri Madhwa Vadiraja Institute of Technology & Management (SMVITM),'
+                              ' situated at Bantakal in Udupi has carved a niche for itself in imparting quality engineering education in the coastal Karnataka region.'
+                              ' Shri Swamiji started the institute with the sublime objective of providing quality higher education to the needy student community at affordable costs. '
+                              'The motto Engineering your Career and Character with Care well reflects the objectives and philosophy of the institute.'
+                              ' Despite, being the youngest institute in the region, SMVITM has made remarkable strides in its journey towards excellence over the past five years and has emerged as the most promising engineering institute with its well-qualified and motivated faculty, '
+                              'state-of-the-art infrastructure and distinguished learning-centric facilities.',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.grey,
                             fontSize: 15.0,
                           ),
                         ),
-                        onPressed: () {
-                          openURL();
-                        },
                       ),
-                    ),
-                  ),
-                ],
-              )),
+                      new ListTile(),
+                      new ListTile(
+                        title: new Container(
+                          child: new FlatButton(
+                            child: Text(
+                              "Click Here for More Info",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 15.0,
+                              ),
+                            ),
+                            onPressed: () {
+                              openURL();
+                            },
+                          ),
+                        ),
+                      ),
+                    ],
+                  )),
             ],
           ),
         ),
