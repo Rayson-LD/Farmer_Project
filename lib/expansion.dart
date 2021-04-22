@@ -14,11 +14,11 @@ class expansion extends StatefulWidget {
 
 class _expansionState extends State<expansion> {
   List<ExpansionItems> items = <ExpansionItems>[
-    ExpansionItems(header : "header",body:"This is the description"),
-    ExpansionItems(header : "header",body:"This is the description"),
-    ExpansionItems(header : "header",body:"This is the description"),
-    ExpansionItems(header : "header",body:"This is the description"),
-    ExpansionItems(header : "header",body:"This is the description"),
+    ExpansionItems(header : "To whom this app is helpful ?",body:"The app is basically helpful for coastal karnatak people as the crops mentioned in this app are grown in that area"),
+    ExpansionItems(header : "How to check the subsidies available to farmers ?",body:"Click on any one of the images in homepage that will direct you to government websites which have the details"),
+    ExpansionItems(header : "What information does this app contain on particular crop ?",body:"This app gives you the plantation method, saplings market locations, where to buy plants etc.."),
+    ExpansionItems(header : "Does this app perform mallige rate calculations ?",body:"No, This app is mainly focused on crop development and its use"),
+    ExpansionItems(header : "How to connect with us ?",body:"You can always connect with us via email, twitter, facebook, and instagram for further details on app"),
 
   ];
   @override
