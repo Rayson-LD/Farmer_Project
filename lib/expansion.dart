@@ -21,6 +21,7 @@ class _expansionState extends State<expansion> {
     ExpansionItems(header : "How to connect with us ?",body:"You can always connect with us via email, twitter, facebook, and instagram for further details on app"),
 
   ];
+  debugShowCheckedModeBanner: false,
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
